@@ -10,6 +10,11 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
+"class": "FollowPoint",
+"language": "GDScript",
+"path": "res://src/components/follow_point.gd"
+}, {
+"base": "Node",
 "class": "State",
 "language": "GDScript",
 "path": "res://src/components/state.gd"
@@ -25,6 +30,7 @@ _global_script_classes=[ {
 "path": "res://src/components/touch_drag.gd"
 } ]
 _global_script_class_icons={
+"FollowPoint": "",
 "State": "",
 "StateMachine": "",
 "TouchDrag": ""
@@ -36,9 +42,24 @@ config/name="Surf-godot-tst"
 run/main_scene="res://src/scenes/Game.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=360
+window/size/height=640
+window/size/resizable=false
+window/handheld/orientation="portrait"
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[importer_defaults]
+
+texture={
+"flags/filter": false
+}
 
 [input_devices]
 

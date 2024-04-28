@@ -2,9 +2,20 @@ class_name State
 extends Node
 
 
-export var is_active = false
+var parent: Node2D
 
 
-func _process(delta):
-	if not is_active: return
+func set_parent(_parent):
+	parent = _parent
 
+
+func run(delta):
+	pass
+
+
+func enter():
+	pass
+
+
+func exit():
+	pass
